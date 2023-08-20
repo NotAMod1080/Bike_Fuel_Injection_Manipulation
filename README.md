@@ -1,2 +1,8 @@
 # Bike_Fuel_Injection_Manipulation
-DIY Fuel Injection Manipulation
+DIY Fuel Injection Manipulation (FIM)
+
+Version: 0.0.1
+
+I have recently moved to a higher altitude, and my bike is struggling (go figure). Therefore, I have decided to go along with increasing the size of the engine, there is no replacement for displacement. However, there are a few supporting mods that will be required, modifications to fuel and ignition timimg. For this project I am focusing on just the fuel for right now, its ignition timing should be a bit conservative anyways. Yet, the end goal is to create a device that will sit inbetween the ECU and wiring harness that will tap into the TPS sensor, O2 Sensor, and Injector wire to read the TPS sensor, simulate the O2 reading, and catch the falling edge of the injector pulse. What will this accomplish? The ECU reciving a simulated O2 reading will prevent it from adjusting its fuel table or enabling limp home mode, thus allowing the FIM(Fuel Injection Manupulation) device use of the O2 seonsor for on the fly adjustments in the case of lean or rich conditions, since I am no skilled tuner. Catching the falling edge of the ECU desired fuel timing will allow this device to pick up on RPM and when to fire the fuel injector, since I've determined that to be rather difficult with just a crank sensor, thus allowing for a custom fuel tune to be delivered. This repo will have all the software and hardware I develop on the way. The struggle will be real.
+
+The hardware I plan on using is an arduino UNO, some form of fuel injector driver with accompanying circuit (TBD), with an SD card to hold the Tune. All subject to change, this is what I have on hand right now.
